@@ -1,0 +1,26 @@
+#Get an Array value from a user in Python:
+
+#Create an array and get the value from a user.
+arr = array('i',[])
+
+#Ask the user the length of the value using the "input" func
+n = int(input("Enter the length of the array: "))
+
+#Request the user to enter the value for the nth time using loop
+for i in range(n):
+    x = int(input('Enter your value: '))
+    arr.append(x)
+
+print(arr)
+
+#Request the user to search for an inputted value and get the index number.
+icon= int(input("Enter a number for search: "))
+
+t=0
+for k in arr:
+    if k==icon:
+	print('The index for that value is ',t)
+	break
+    t+=1
+#OR
+print(arr.index(icon))
